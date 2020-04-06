@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri  name="http://xmlns.com/foaf/0.1/" uri="FOAF/index.rdf"/>
+    <group  prefer="public" xml:base="">
+        <uri  name="http://www.semanticweb.org/midok/ontologies/2019/11/organisation" uri="organisation.owl"/>
+    </group>
+</catalog>

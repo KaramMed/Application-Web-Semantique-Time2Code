@@ -1,0 +1,1857 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#"
+     xml:base="http://www.semanticweb.org/midok/ontologies/2019/11/organisation"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#appartient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#appartient">
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#choisis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#choisis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#connait -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#connait">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#contient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cree"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#depose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#depose"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#enseigne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#enseigne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#etudie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#etudie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#fait_recherche -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#fait_recherche"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#fait_travailler -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#fait_travailler">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#travaille"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne_par"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne_par -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne_par"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere_par"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere_par -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere_par"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise_par"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise_par -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise_par"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#participe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#participe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#passe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#passe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prends"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prends_lieu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prends_lieu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#propose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#propose"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#se_deroule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#se_deroule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#travaille -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#travaille"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/knows -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/knows"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#activité -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#activité">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#age">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/age"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:comment>l&apos;age de la personne</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cible">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+        <rdfs:comment>les personnes ciblés</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:comment>le numero de la carte d&apos;identitié nationale</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cne">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Etudiant"/>
+        <rdfs:comment>le numero du code national de l&apos;etudiant</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#datecreation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#datecreation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#datenaissance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#datenaissance">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/birthday"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#domaine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#domaine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#durée -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#durée">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <rdfs:comment>la durée exprimée en heures</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#email_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#email_id">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/nick"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#emploi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#emploi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+        <rdfs:comment>l&apos;emploi occupé par le responsable</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#forme -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#forme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix"/>
+        <rdfs:comment>la forme du prix</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#genre">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/gender"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:comment>le genre de la personne</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#niveau_etudes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#niveau_etudes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Etudiant"/>
+        <rdfs:comment>le niveau d&apos;etudes apres le bac</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#nom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Université"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#nom_famille -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#nom_famille">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#pays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#pays">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Université"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#periode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#periode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prenom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prenom">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/lastName"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#saison -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#saison">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Vainqueur"/>
+        <rdfs:comment>ca veut dire l&apos;annee actuelle</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#specialité -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#specialité">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire"/>
+        <rdfs:comment>designe une specialité precise</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#titre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#titre">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/title"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#valeur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#valeur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix"/>
+        <rdfs:comment>la valeur en terme de monnaie</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ville -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ville">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Université"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/age"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/birthday -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/birthday"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/lastName -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/lastName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/title -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Adherent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Adherent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Etudiant"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#depose"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#depose"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#participe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#participe"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#contient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#contient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Chercheur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Chercheur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#fait_recherche"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Co-Fondateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Co-Fondateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#propose"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#propose"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#se_deroule"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#se_deroule"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne_par"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Vainqueur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise_par"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prends_lieu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#appartient"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#contient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#contient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#appartient"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Université"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Employé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Employé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#travaille"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Enseignant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Enseignant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Chercheur"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#enseigne"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#enseigne"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Etudiant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Etudiant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Etudiant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#etudie"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#appartient"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Fondateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Fondateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cree"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#cree"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ingenieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ingenieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Employé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Chercheur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Chercheur"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Membre_dhonneur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Membre_dhonneur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#fait_travailler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Employé"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#fait_travailler"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Employé"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere_par"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere_par"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#organise"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#connait"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#connait"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix"/>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Responsable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gere"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Technicien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Technicien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Employé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Université -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Université">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#comporte"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Vainqueur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Vainqueur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#gagne"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#prends"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Abdelilah_Annan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Abdelilah_Annan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <choisis rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#IA"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Annan"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <participe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Annan"/>
+        <passe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPythIA"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annan</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdelilah</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ahlam_ElBarhoumi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ahlam_ElBarhoumi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Co-Fondateur"/>
+        <connait rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Karam_Mohamed"/>
+        <gere rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GeniusADev"/>
+        <emploi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co Fondatrice</emploi>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El Barhoumi</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahlam</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Benaddi_Brahim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Benaddi_Brahim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <choisis rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#POO"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Benaddi"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <participe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Benaddi"/>
+        <passe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJAVA"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benaddi</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brahim</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Annan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Annan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Abdelilah_Annan"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Benaddi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Benaddi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Benaddi_Brahim"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Chihab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Chihab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Yasser_Chihab"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_ElMouafi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_ElMouafi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Imane_El_Mouafi"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Fakham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Fakham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Fakham_Mohammed"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Hadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Hadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Hadi_Meryem"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Harouch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Harouch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Harouch_Moncef"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Izzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Izzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Izzo_Abdelaziz"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Jabbar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Jabbar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mohcine_Jabbar"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Zrari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Zrari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Zrari_Aymen"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#DevWeb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#DevWeb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJEE"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPHP"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpement Web</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ecole"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#UH2C"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Electrique"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Informatique"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Management"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mechanique"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#RITM"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technologie</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecole Superieur de Technologie Casablanca</nom>
+        <pays rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroc</pays>
+        <ville rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca</ville>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Electrique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Electrique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GE"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrique</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genie Electrique</nom>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJAVA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJAVA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orienté Objet</domaine>
+        <durée rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</durée>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examen JAVA</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJEE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJEE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web</domaine>
+        <durée rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</durée>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examen Java Entrerprise Edition</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPHP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPHP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web</domaine>
+        <durée rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</durée>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examen PHP</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPythIA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPythIA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligence Artificielle et Big Data</domaine>
+        <durée rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</durée>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examen PythIA</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenTest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Management"/>
+        <nom>Finance et Comptabilité</nom>
+        <specialité>Finance</specialité>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Fakham_Mohammed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Fakham_Mohammed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <choisis rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#POO"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Fakham"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <participe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Fakham"/>
+        <passe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenC++"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fakham</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohammed</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Electrique"/>
+        <nom>Genie Electrique</nom>
+        <specialité>Electrique</specialité>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Informatique"/>
+        <nom>Genie Informatique</nom>
+        <specialité>Informatique</specialité>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mechanique"/>
+        <nom>Genie Mechanique</nom>
+        <specialité>Mechanique</specialité>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GeniusADev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GeniusADev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Organisation"/>
+        <gere_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ahlam_ElBarhoumi"/>
+        <gere_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Karam_Mohamed"/>
+        <gere_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mme_Rachida_Ajhoun"/>
+        <organise rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <datecreation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/06/2016</datecreation>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeniusADev</nom>
+        <pays rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroc</pays>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organisation de gestion des competitions</type>
+        <ville rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca</ville>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Hadi_Meryem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Hadi_Meryem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Hadi"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hadi</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meryem</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Harouch_Moncef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Harouch_Moncef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Harouch"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harouch</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moncef</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Hassouni_Larbi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Hassouni_Larbi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Enseignant"/>
+        <connait rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ridouani_Mohamed"/>
+        <enseigne rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <fait_recherche rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#RITM"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55</age>
+        <cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bkxxxxxx</cin>
+        <datenaissance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xx-xx-1970</datenaissance>
+        <email_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larbihassouni@gmail.com</email_id>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homme</genre>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hassouni</nom_famille>
+        <pays rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroc</pays>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larbi</prenom>
+        <ville rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fes</ville>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr</foaf:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#IA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#IA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPythIA"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligence Artificielle et Big Data</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligence Artificielle</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Imane_El_Mouafi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Imane_El_Mouafi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Vainqueur"/>
+        <choisis rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#IA"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_ElMouafi"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <gagne rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <participe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_ElMouafi"/>
+        <passe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenPythIA"/>
+        <prends rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Troph2Code"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ElMouafi</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imane</prenom>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Informatique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Informatique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informatique</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genie Informatique</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Izzo_Abdelaziz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Izzo_Abdelaziz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participant"/>
+        <choisis rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#DevWeb"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Izzo"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <participe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Izzo"/>
+        <passe rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJEE"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izzo</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdelaziz</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Competition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Competition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+        <activité rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journée de deroulement de competition</activité>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11/04/2017</date>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Preparation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Preparation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+        <activité rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preparation de la competition</activité>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10/04/2017</date>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Remise_Prix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Remise_Prix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée"/>
+        <activité rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journée de remise de prix pour les vainqueurs</activité>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12/04/2017</date>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Karam_Mohamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Karam_Mohamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Fondateur"/>
+        <cree rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GeniusADev"/>
+        <gere rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GeniusADev"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</age>
+        <cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bkxxxxxx</cin>
+        <datenaissance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22-04-1998</datenaissance>
+        <email_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mkaram926@gmail.com</email_id>
+        <emploi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homme d&apos;affaires</emploi>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homme</genre>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karam</nom_famille>
+        <pays rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroc</pays>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohamed</prenom>
+        <titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr</titre>
+        <ville rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca</ville>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#FC"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#TM"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Management</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Techniques de Management</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mechanique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mechanique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Departement"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GM"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanique</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genie Mechanique</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mme_Rachida_Ajhoun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mme_Rachida_Ajhoun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Membre_dhonneur"/>
+        <gere rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GeniusADev"/>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femme</genre>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ajhoun</nom_famille>
+        <pays rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroc</pays>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rachida</prenom>
+        <titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mme</titre>
+        <ville rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rabat</ville>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mohcine_Jabbar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mohcine_Jabbar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Jabbar"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jabbar</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohcine</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#POO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#POO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Champs"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenJAVA"/>
+        <contient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenC++"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orienté Objet</domaine>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Programmation Orienté Objet</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Annan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Annan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Abdelilah_Annan"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Benaddi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Benaddi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Benaddi_Brahim"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_ElMouafi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_ElMouafi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Imane_El_Mouafi"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Fakham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Fakham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Fakham_Mohammed"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Izzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Izzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Izzo_Abdelaziz"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code"/>
+        <saison rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</saison>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#RITM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#RITM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Laboratoire"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Hassouni_Larbi"/>
+        <nom>Laboratoire de Recherche en Réseaux, Informatique,Télécommunications et Multimédia</nom>
+        <specialité>Informatique et Reseaux Telecom</specialité>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ridouani_Mohamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ridouani_Mohamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Enseignant"/>
+        <connait rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Hassouni_Larbi"/>
+        <enseigne rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <fait_recherche rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#RITM"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</age>
+        <cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BKxxxxxx</cin>
+        <datenaissance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xx-xx-1978</datenaissance>
+        <email_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ridouani@estc.ma</email_id>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homme</genre>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ridouani</nom_famille>
+        <pays rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroc</pays>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohammed</prenom>
+        <titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr</titre>
+        <ville rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca</ville>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#TM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#TM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Filiere"/>
+        <appartient rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Management"/>
+        <nom>Techniques de Management</nom>
+        <specialité>Management</specialité>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Time2Code">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Competition"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Annan"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Benaddi"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Chihab"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_ElMouafi"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Fakham"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Hadi"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Harouch"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Izzo"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Jabbar"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Zrari"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Annan"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Benaddi"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_ElMouafi"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Fakham"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Participation_Izzo"/>
+        <gagne_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Imane_El_Mouafi"/>
+        <gere_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Ahlam_ElBarhoumi"/>
+        <gere_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Karam_Mohamed"/>
+        <gere_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Mme_Rachida_Ajhoun"/>
+        <organise_par rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GeniusADev"/>
+        <prends_lieu rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <propose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#DevWeb"/>
+        <propose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#IA"/>
+        <propose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#POO"/>
+        <se_deroule rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Competition"/>
+        <se_deroule rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Preparation"/>
+        <se_deroule rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Journée_Remise_Prix"/>
+        <durée rdf:datatype="http://www.w3.org/2001/XMLSchema#int">48</durée>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time2Code</nom>
+        <periode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annuaire</periode>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithmique et Informatique</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Troph2Code -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Troph2Code">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Prix"/>
+        <forme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rond</forme>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Troph2Code</nom>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trophé</type>
+        <valeur rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</valeur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#UH2C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#UH2C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Université"/>
+        <comporte rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Université Hassan II</nom>
+        <pays rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroc</pays>
+        <ville rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca</ville>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Yasser_Chihab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Yasser_Chihab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Chihab"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chihab</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yasser</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Zrari_Aymen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Zrari_Aymen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidat"/>
+        <depose rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Candidature_Zrari"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ESTC"/>
+        <etudie rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#GI"/>
+        <nom_famille rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zrari</nom_famille>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aymen</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenC++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#ExamenC++">
+        <rdf:type rdf:resource="http://www.semanticweb.org/midok/ontologies/2019/11/organisation#Examen"/>
+        <domaine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orienté Objet</domaine>
+        <durée rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</durée>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examen C++</nom>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
